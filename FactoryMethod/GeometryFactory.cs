@@ -9,7 +9,7 @@ namespace SquareLibrary.FactoryMethod
 {
     public static class GeometryFactory
     {
-        public enum FigureType { Circle, Triangle};
+        public enum FigureType { Circle, Triangle, Rectangle };
 
         /// <summary>
         /// Фабричный метод
@@ -21,6 +21,7 @@ namespace SquareLibrary.FactoryMethod
             {
                 case FigureType.Circle: return new Circle(1);
                 case FigureType.Triangle: return new Triangle(3,4,5);
+                case FigureType.Rectangle: return new Rectangle(4, 5);
             }
             return null;
         }
