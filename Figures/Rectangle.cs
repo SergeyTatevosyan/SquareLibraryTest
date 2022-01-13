@@ -17,6 +17,11 @@ namespace SquareLibrary.Figures
         private double _width;
         private double _length;
 
+        /// <summary>
+        /// Площадь квадрата
+        /// </summary>
+        /// <returns></returns>
+
         public override double SquareCalculator()
         {
             return _width * _length;

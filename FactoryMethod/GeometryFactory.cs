@@ -19,7 +19,7 @@ namespace SquareLibrary.FactoryMethod
         {
             switch (figureType)
             {
-                case FigureType.Circle: return new Circle(1);
+                case FigureType.Circle: return new Circle(2);
                 case FigureType.Triangle: return new Triangle(3,4,5);
                 case FigureType.Rectangle: return new Rectangle(4, 5);
             }
